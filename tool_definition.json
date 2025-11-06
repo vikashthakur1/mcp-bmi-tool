@@ -1,0 +1,22 @@
+{
+    "name": "calculate_bmi",
+    "description": "Calculates Body Mass Index (BMI) from height and weight. Returns BMI value and health category (underweight, normal, overweight, obese). Use this when users ask about their body mass index or health metrics.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "height_cm": {
+          "type": "number",
+          "description": "Height in centimeters (e.g., 170)",
+          "minimum": 50,
+          "maximum": 300
+        },
+        "weight_kg": {
+          "type": "number",
+          "description": "Weight in kilograms (e.g., 65)",
+          "minimum": 10,
+          "maximum": 500
+        }
+      },
+      "required": ["height_cm", "weight_kg"]
+    }
+  }
